@@ -7,7 +7,6 @@
 * 12/29/2014
 */
 
-
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
@@ -41,17 +40,83 @@
   float: left;
   box-sizing: border-box; }
 
+.works {
+    /*border-top: 1px solid #eee;
+    padding: 4rem 0;
+    margin-bottom: 0;*/
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+}
+
+.docs  {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
+
+.intro {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.intro-content {
+  width: 480px;
+  vertical-align: middle;
+}
+
+.content {
+  /*display: table-cell;*/
+  vertical-align: middle;
+
+}
+
+.docs-section {
+  /*  min-height: 100%;
+    height: 100vh;
+    padding-top: 0px;
+    padding-bottom: 0px;*/
+    margin-bottom: 10%;
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 85%;
     padding: 0; }
 }
+  .docs {
+    width: 85%;
+    padding: 0; }
+
+@media (min-width: 750px)
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
     width: 80%; }
+  .docs {
+    width: 80%;
+  }
   .column,
   .columns {
     margin-left: 4%; }
@@ -122,14 +187,17 @@ html {
   font-size: 62.5%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 2.0; /* default 1.6 */ 
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: "Lora", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4A4A4A; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased; }
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -155,6 +223,53 @@ p {
   margin-top: 0; }
 
 
+/* Custom Typography */
+
+
+/*.docs-section {
+    border-top: 1px solid #000;
+    padding: 4rem 0;
+    margin-bottom: 0;
+}*/
+
+.intro-header {
+    font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3.6rem;
+    color: #c9c9c9;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    letter-spacing: -.1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased; 
+  }
+
+.docs-header {
+    font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    letter-spacing: -.08rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased; 
+  }
+
+.docs-tag {
+  font-family: "Work Sans";
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: ;
+  margin-bottom: 2rem; 
+}
+
+@media (min-width: 550px) {
+.docs-header {
+  font-size: 3.0rem;
+}
+.intro-header{
+  4.2rem;
+}
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
@@ -175,8 +290,9 @@ input[type="button"] {
   padding: 0 30px;
   color: #555;
   text-align: center;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 38px;
   letter-spacing: .1rem;
   text-transform: uppercase;
@@ -325,6 +441,7 @@ pre > code {
 th,
 td {
   padding: 12px 15px;
+  font-family: "Lora";
   text-align: left;
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
