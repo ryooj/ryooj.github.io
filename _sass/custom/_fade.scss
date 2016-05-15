@@ -1,0 +1,123 @@
+// Fades
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// mixins for vendor prefixes...
+
+.fade-first, .fade-second, .fade-last { opacity: 0; }
+
+.fade-first {
+  -webkit-animation-delay: 0.01s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.fade-second {
+  -webkit-animation-delay: 0.15s;
+  -moz-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.fade-last {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.fade-in {
+   -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-name: fade;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-fill-mode: both;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.fade-out {
+   -webkit-animation-name: fadeout;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-name: fadeout;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-fill-mode: both;
+  animation-name: fadeout;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.fade-up {
+  -webkit-animation-name: fadeup;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-name: fadeup;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-fill-mode: both;
+  animation-name: fadeup;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fade {
+  from  { opacity: 0;  }
+  to    { opacity: 1; }
+}
+@-moz-keyframes fade {
+  from  { opacity: 0; }
+  to    { opacity: 1; }
+}
+@-o-keyframes fade {
+  from  { opacity: 0; }
+  to    { opacity: 1; }
+}
+@keyframes fade {
+  from  { opacity: 0;  }
+  to    { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+  from  { opacity: 1;  }
+  to    { opacity: 0; }
+}
+@-moz-keyframes fadeout {
+  from  { opacity: 1;  }
+  to    { opacity: 0; }
+}
+@-o-keyframes fadeout {
+  from  { opacity: 1;  }
+  to    { opacity: 0; }
+}
+@keyframes fadeout {
+  from  { opacity: 1;  }
+  to    { opacity: 0; }
+}
+
+@-webkit-keyframes fadeup {
+  from  { opacity: 0; -webkit-transform: translateY(15px); }
+  to    { opacity: 1; }
+}
+@-moz-keyframes fadeup {
+  from  { opacity: 0; -moz-transform: translateY(15px); }
+  to    { opacity: 1; }
+}
+@-o-keyframes fadeup {
+  from  { opacity: 0; -o-transform: translateY(15px); }
+  to    { opacity: 1; }
+}
+@keyframes fadeup {
+  from  { opacity: 0; transform: translateY(15px); }
+  to    { opacity: 1; }
+}
