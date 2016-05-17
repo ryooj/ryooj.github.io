@@ -2,7 +2,7 @@
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.fade-in, article {
+.fade-in, main {
   opacity:0;  /* make things invisible upon start */
   -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   -moz-animation:fadeIn ease-in 1;
@@ -24,7 +24,11 @@ header {
     top: 0px;
     transition: top 0.2s ease-in-out;
     width: 80%;
+    /*z-index; 99;*/
 }
+
+
+
 
 .nav-up {
     top: -40px;
