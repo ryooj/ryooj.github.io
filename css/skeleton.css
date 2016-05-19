@@ -68,6 +68,7 @@ article{
 }
 
 .intro-content {
+  /*margin-top: -40px;*/
   width: 480px;
   vertical-align: middle;
 }
