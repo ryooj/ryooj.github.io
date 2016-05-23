@@ -352,14 +352,14 @@ p {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased; */
     font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bolder;
-    /*font-size: 1.5em;*/
-    font-size: 11px;
+    font-weight: 600;
+    font-size: 1.5em;
+    /*font-size: 11px;*/
     line-height: 1.6;
     text-transform: uppercase;
 
     letter-spacing: 0.1rem;
-    /*margin-bottom: 2rem;*/
+    margin-bottom: 2rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
 
